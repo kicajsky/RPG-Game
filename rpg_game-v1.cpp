@@ -88,12 +88,12 @@ int main()
         seledyn();
         cout<< "1. Talk to the inkeeper.\n2. Look around for a free table.\n";
 
-        choice = getch();// first decision
+        choice = _getch();// first decision
         if(choice=='1')
         {
             cout<<"\n-Hello traveler! Unfortunately, sales stopped because of rats in the basement. If you could help me and kill them..\nIt will be helpful in resume trading. The sooner, the better.\n";
             cout<< "\n1. Help with killing rat.\n2. Refuse help.\n";
-            choice = getch();  //2.1 decision.    ?
+            choice = _getch();  //2.1 decision.    ?
             if(choice=='1')
             {
                 cout<<"-I will deal with it, as soon as possible.\n";
@@ -115,7 +115,7 @@ int main()
                     {
                         seledyn();
                         cout<< "\n1. Try to start conversation.\n2. Do nothing.\n";
-                        choice = getch();
+                        choice = _getch();
                         if(choice=='1' && reputation>=1)
                         {
                             cout<<"\n-Okey, you seems to be friendly and helpful. You can joun us and experience the adventure!\n";
@@ -158,7 +158,7 @@ int main()
 
             seledyn();
             cout<< "\n1. Try to start conversation.\n2. Do nothing.\n";
-            choice = getch();
+            choice = _getch();
             if(choice=='1' && reputation>=1)
             {
                 cout<<"\n-Okey, you seems to be friendly and helpful. You can joun us and experience the adventure!\n";
